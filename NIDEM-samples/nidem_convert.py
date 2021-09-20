@@ -35,7 +35,7 @@ FIELD_NAMES = "X,Y,Z,TVU"
 
 def _write_json(data: Dict[str, Any], out_pathname: Path, **kwargs):
     """Small util for writing JSON content."""
-    _LOG.info("writing JSON file", pathname=out_pathname, **kwargs)
+    _LOG.info("writing JSON file", pathname=str(out_pathname), **kwargs)
     with open(out_pathname, "w") as src:
         json.dump(data, src, indent=4)
 
