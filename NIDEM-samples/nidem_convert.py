@@ -38,10 +38,11 @@ def _write_json(data: Dict[str, Any], out_pathname: Path, **kwargs):
     _LOG.info("writing JSON file", pathname=out_pathname, **kwargs)
     with open(out_pathname, "w") as src:
         json.dump(data, src, indent=4)
-    
 
 
-def conversion(base_pipeline_pathname: Path, zip_pathname: Path, tempdir: tempfile.TemporaryDirectory) -> None:
+def conversion(
+    base_pipeline_pathname: Path, zip_pathname: Path, tempdir: tempfile.TemporaryDirectory
+) -> None:
     """
     Small utility to convert the sample NIDEM ASCII point data into a TileDB point cloud.
     General operations are:
@@ -248,8 +249,12 @@ def stac_metadata(
     )
 
     # data and metadata uri population
-    stac_uri = uritools.urisplit(Path(data_uri.path).parent.joinpath(out_pathname.name).as_uri())
-    metadata_target = uritools.uricompose(scheme=data_uri.scheme, authority=data_uri.authority, path=stac_uri.path)
+    stac_uri = uritools.urisplit(
+        Path(data_uri.path).parent.joinpath(out_pathname.name).as_uri()
+    )
+    metadata_target = uritools.uricompose(
+        scheme=data_uri.scheme, authority=data_uri.authority, path=stac_uri.path
+    )
     item.add_asset("data", pystac.Asset(href=data_uri.geturi(), roles=["data"]))
     item.add_link(
         pystac.Link(rel="self", media_type=pystac.MediaType.JSON, target=metadata_target)
@@ -262,16 +267,31 @@ def stac_metadata(
 
 
 @click.command()
-@click.option("--uri-name", default="s3://ardc-gmrt-test-data/NIDEM-25m/NIDEM_25m.tiledb",
-    help="The URI for the output location of the TileDB data file.")
-@click.option("--base-pipeline-pathname", type=click.Path(exists=True, readable=True),
-    help="The base input PDAL pipeline template for data conversion.")
-@click.option("--zip-pathname", type=click.Path(exists=True, readable=True),
-    help="The pathname to the zip file containing the sample NIDEM data.")
-@click.option("--tiledb-config-pathname", type=click.Path(exists=True, readable=True),
-    help="The pathname to the TileDB config file. Required for writing to AWS S3.")
-@click.option("--outdir", type=click.Path(file_okay=False, writable=True),
-    help="The base output directory for storing local files.")
+@click.option(
+    "--uri-name",
+    default="s3://ardc-gmrt-test-data/NIDEM-25m/NIDEM_25m.tiledb",
+    help="The URI for the output location of the TileDB data file.",
+)
+@click.option(
+    "--base-pipeline-pathname",
+    type=click.Path(exists=True, readable=True),
+    help="The base input PDAL pipeline template for data conversion.",
+)
+@click.option(
+    "--zip-pathname",
+    type=click.Path(exists=True, readable=True),
+    help="The pathname to the zip file containing the sample NIDEM data.",
+)
+@click.option(
+    "--tiledb-config-pathname",
+    type=click.Path(exists=True, readable=True),
+    help="The pathname to the TileDB config file. Required for writing to AWS S3.",
+)
+@click.option(
+    "--outdir",
+    type=click.Path(file_okay=False, writable=True),
+    help="The base output directory for storing local files.",
+)
 def main(uri_name, base_pipeline_pathname, zip_pathname, tiledb_config_pathname, outdir):
     """
     Data conversion process (ASCII -> TileDB) for the sample NIDEM data.
@@ -282,7 +302,7 @@ def main(uri_name, base_pipeline_pathname, zip_pathname, tiledb_config_pathname,
         conversion(base_pipeline_pathname, zip_pathname, tempdir)
 
     data_uri = uritools.urisplit(uri_name)
-    basepath = Path(*(Path(data_uri.path).parts[1:]))  # # account for the leading /
+    basepath = Path(*(Path(data_uri.path).parts[1:]))  # account for the leading "/"
     base_pathname = Path(outdir, Path(basepath.stem))
 
     if not base_pathname.parent.exists():
@@ -290,16 +310,28 @@ def main(uri_name, base_pipeline_pathname, zip_pathname, tiledb_config_pathname,
         base_pathname.parent.mkdir(parents=True)
 
     _LOG.info("executing task `PDAL info pipeline`")
-    info_metadata = info(uri_name, tiledb_config_pathname, base_pathname.with_suffix(".info.json"))
+    info_metadata = info(
+        uri_name, tiledb_config_pathname, base_pathname.with_suffix(".info.json")
+    )
 
     _LOG.info("executing task `PDAL stats pipeline`")
-    stats_metadata = stats(uri_name, tiledb_config_pathname, base_pathname.with_suffix(".stats.json"))
+    stats_metadata = stats(
+        uri_name, tiledb_config_pathname, base_pathname.with_suffix(".stats.json")
+    )
 
     _LOG.info("executing task `PDAL hexbin filter`")
-    hex_metadata = hexbin(uri_name, tiledb_config_pathname, base_pathname.with_suffix(".hexbin.json"))
+    hex_metadata = hexbin(
+        uri_name, tiledb_config_pathname, base_pathname.with_suffix(".hexbin.json")
+    )
 
     _LOG.info("executing task `generate stac metadata`")
-    stac_metadata(info_metadata, stats_metadata, hex_metadata, data_uri, base_pathname.with_suffix(".stac.json"))
+    stac_metadata(
+        info_metadata,
+        stats_metadata,
+        hex_metadata,
+        data_uri,
+        base_pathname.with_suffix(".stac.json"),
+    )
 
 
 if __name__ == "__main__":
