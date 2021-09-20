@@ -33,6 +33,14 @@ _LOG = structlog.get_logger()
 FIELD_NAMES = "X,Y,Z,TVU"
 
 
+def _write_json(data: Dict[str, Any], out_pathname: Path, **kwargs):
+    """Small util for writing JSON content."""
+    _LOG.info("writing JSON file", pathname=out_pathname, **kwargs)
+    with open(out_pathname, "w") as src:
+        json.dump(data, src, indent=4)
+    
+
+
 def conversion(base_pipeline_pathname: Path, zip_pathname: Path, tempdir: tempfile.TemporaryDirectory) -> None:
     """
     Small utility to convert the sample NIDEM ASCII point data into a TileDB point cloud.
@@ -108,9 +116,7 @@ def info(data_uri: str, config_pathname: Path, out_pathname: Path) -> Dict[str, 
     _ = pipeline.execute()
     metadata = json.loads(pipeline.metadata)
 
-    _LOG.info("writing results from info pipeline", pathname=out_pathname)
-    with open(out_pathname, "w") as src:
-        json.dump(metadata, src, indent=4)
+    _write_json(metadata, out_pathname, task="calculate info", pdal_pipeline="info")
 
     return metadata
 
@@ -132,9 +138,7 @@ def stats(data_uri: str, config_pathname: Path, out_pathname: Path) -> Dict[str,
     _ = pipeline.execute()
     metadata = json.loads(pipeline.metadata)
 
-    _LOG.info("writing results from stats pipeline", pathname=out_pathname)
-    with open(out_pathname, "w") as src:
-        json.dump(metadata, src, indent=4)
+    _write_json(metadata, out_pathname, task="calculate stats", pdal_pipelin="stats")
 
     return metadata
 
@@ -163,9 +167,7 @@ def hexbin(data_uri: str, config_pathname: Path, out_pathname: Path) -> Dict[str
     _ = pipeline.execute()
     metadata = json.loads(pipeline.metadata)
 
-    _LOG.info("writing results from hexbin filter", pathname=out_pathname)
-    with open(out_pathname, "w") as src:
-        json.dump(metadata, src, indent=4)
+    _write_json(metadata, out_pathname, task="calculate hexbin", pdal_filter="hexbin")
 
     return metadata
 
@@ -257,6 +259,4 @@ def stac_metadata(
     # ignore validation for this prototype
     # item.validate()
 
-    _LOG.info("writing results from hexbin filter", pathname=out_pathname)
-    with open(out_pathname, "w") as src:
-        json.dump(item.to_dict(), src, indent=4)
+    _write_json(item.to_dict(), out_pathname, task="generate STAC metadata")
