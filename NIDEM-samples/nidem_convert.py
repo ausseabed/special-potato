@@ -41,7 +41,10 @@ def _write_json(data: Dict[str, Any], out_pathname: Path, **kwargs):
 
 
 def conversion(
-    base_pipeline_pathname: Path, zip_pathname: Path, tempdir: tempfile.TemporaryDirectory
+    base_pipeline_pathname: Path,
+    zip_pathname: Path,
+    config_pathname: Path,
+    tempdir: tempfile.TemporaryDirectory,
 ) -> None:
     """
     Small utility to convert the sample NIDEM ASCII point data into a TileDB point cloud.
@@ -55,6 +58,8 @@ def conversion(
     """
     with open(base_pipeline_pathname, "r") as src:
         ingestion_pipeline = json.load(src)
+
+    ingestion_pipeline[1]["config_file"] = str(config_pathname)
 
     with zipfile.ZipFile(zip_pathname, "r") as src:
         zip_objects = [f for f in src.filelist if Path(f.filename).suffix == ".txt"]
@@ -297,9 +302,13 @@ def main(uri_name, base_pipeline_pathname, zip_pathname, tiledb_config_pathname,
     Data conversion process (ASCII -> TileDB) for the sample NIDEM data.
     STAC metadata generation.
     """
+    base_pipeline_pathname = Path(base_pipeline_pathname)
+    zip_pathname = Path(zip_pathname)
+    tiledb_config_pathname = Path(tiledb_config_pathname)
+
     _LOG.info("converting ASCII data files")
     with tempfile.TemporaryDirectory(suffix=".tmp", prefix="unpack-") as tempdir:
-        conversion(base_pipeline_pathname, zip_pathname, tempdir)
+        conversion(base_pipeline_pathname, zip_pathname, tiledb_config_pathname, tempdir)
 
     data_uri = uritools.urisplit(uri_name)
     basepath = Path(*(Path(data_uri.path).parts[1:]))  # account for the leading "/"
