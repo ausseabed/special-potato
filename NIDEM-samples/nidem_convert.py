@@ -88,3 +88,26 @@ def conversion(base_pipeline_pathname: Path, zip_pathname: Path, tempdir: tempfi
             ingestion_pipeline[1]["append"] = True
 
     _LOG.info("finished conversion")
+
+
+def info(data_uri: str, config_pathname: Path, out_pathname: Path) -> Dict[str, Any]:
+    """Executes the PDAL info pipeline on the TileDB data file."""
+    info_pipeline = [
+        {
+            "filename": data_uri,
+            "type": "readers.tiledb",
+            "override_srs": "EPSG:4326",
+            "config_file": str(config_pathname),
+        },
+        {"type": "filters.info"},
+    ]
+
+    pipeline = pdal.Pipeline(json.dumps(info_pipeline))
+    _LOG.info("accessing metadata", pathname=data_uri)
+    _ = pipeline.execute()
+    metadata = json.loads(pipeline.metadata)
+
+    with open(out_pathname, "w") as src:
+        json.dump(metadata, src, indent=4)
+
+    return metadata
