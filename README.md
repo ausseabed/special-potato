@@ -3,7 +3,14 @@
 # Overview
 Initially just prototype scripts to demonstrate the conversion of data to TileDB, and harvesting of metadata to output into the STAC schema for the PL019 project.
 
-## NIDEM Conversion
+## NIDEM
+See https://cmi.ga.gov.au/data-products/dea/325/dea-intertidal-elevation-landsat for specifics on NIDEM.
+The metadata was harvested from varied sources:
+* Supplied Excel Spreasheet
+* CMI (see above link)
+* Calculated from the data itself
+
+### Conversion
 
 ```bash
 python nidem_convert.py --help
