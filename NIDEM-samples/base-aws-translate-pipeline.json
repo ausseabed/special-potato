@@ -6,7 +6,7 @@
     },
     {
         "type": "writers.tiledb",
-        "filename": "s3://ardc-gmrt-test-data/NIDEM-25m/NIDEM_25m.tiledb",
+        "filename": "insert filename",
         "append": false,
         "filters": {
             "coords": [
@@ -18,6 +18,6 @@
                 {"compression": "zstd", "compression_level": 75}
             ]
         },
-        "config_file": "tiledb_config-asb-non-prod.txt"
+        "config_file": "insert pathname"
     }
 ]
