@@ -1,0 +1,23 @@
+[
+    {
+        "filename":"insert",
+        "type":"readers.text",
+        "override_srs": "EPSG:4326"
+    },
+    {
+        "type": "writers.tiledb",
+        "filename": "s3://ardc-gmrt-test-data/NIDEM-25m/NIDEM_25m.tiledb",
+        "append": false,
+        "filters": {
+            "coords": [
+                {"compression": "bit-shuffle"},
+                {"compression": "zstd", "compression_level": 75}
+            ],
+            "TVU": [
+                {"compression": "bit-shuffle"},
+                {"compression": "zstd", "compression_level": 75}
+            ]
+        },
+        "config_file": "tiledb_config-asb-non-prod.txt"
+    }
+]
