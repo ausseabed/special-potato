@@ -1,0 +1,153 @@
+{
+    "metadata": {
+        "filters.stats": {
+            "bbox": {
+                "EPSG:4326": {
+                    "bbox": {
+                        "maxx": 150.0686017,
+                        "maxy": -36.51753112,
+                        "maxz": 0.898,
+                        "minx": 142.80665,
+                        "miny": -42.54229642,
+                        "minz": -1.584
+                    },
+                    "boundary": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    142.80664998,
+                                    -42.54229642,
+                                    -1.584
+                                ],
+                                [
+                                    142.80664998,
+                                    -36.51753112,
+                                    -1.584
+                                ],
+                                [
+                                    150.06860171,
+                                    -36.51753112,
+                                    0.898
+                                ],
+                                [
+                                    150.06860171,
+                                    -42.54229642,
+                                    0.898
+                                ],
+                                [
+                                    142.80664998,
+                                    -42.54229642,
+                                    -1.584
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                "native": {
+                    "bbox": {
+                        "maxx": 150.0686017,
+                        "maxy": -36.51753112,
+                        "maxz": 0.898,
+                        "minx": 142.80665,
+                        "miny": -42.54229642,
+                        "minz": -1.584
+                    },
+                    "boundary": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    142.80664998,
+                                    -42.54229642,
+                                    -1.584
+                                ],
+                                [
+                                    142.80664998,
+                                    -36.51753112,
+                                    -1.584
+                                ],
+                                [
+                                    150.06860171,
+                                    -36.51753112,
+                                    0.898
+                                ],
+                                [
+                                    150.06860171,
+                                    -42.54229642,
+                                    0.898
+                                ],
+                                [
+                                    142.80664998,
+                                    -42.54229642,
+                                    -1.584
+                                ]
+                            ]
+                        ]
+                    }
+                }
+            },
+            "statistic": [
+                {
+                    "average": 146.2461644,
+                    "count": 929318,
+                    "maximum": 150.0686017,
+                    "minimum": 142.80665,
+                    "name": "X",
+                    "position": 0,
+                    "stddev": 1.43402172,
+                    "variance": 2.056418295
+                },
+                {
+                    "average": -39.69547739,
+                    "count": 929318,
+                    "maximum": -36.51753112,
+                    "minimum": -42.54229642,
+                    "name": "Y",
+                    "position": 1,
+                    "stddev": 1.311274646,
+                    "variance": 1.719441198
+                },
+                {
+                    "average": -0.1983668927,
+                    "count": 929318,
+                    "maximum": 0.898,
+                    "minimum": -1.584,
+                    "name": "Z",
+                    "position": 2,
+                    "stddev": 0.5010518131,
+                    "variance": 0.2510529194
+                },
+                {
+                    "average": 0.5,
+                    "count": 929318,
+                    "maximum": 0.5,
+                    "minimum": 0.5,
+                    "name": "TVU",
+                    "position": 3,
+                    "stddev": 0,
+                    "variance": 0
+                }
+            ]
+        },
+        "readers.tiledb": {
+            "comp_spatialreference": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+            "spatialreference": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+            "srs": {
+                "compoundwkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+                "horizontal": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+                "isgeocentric": false,
+                "isgeographic": true,
+                "prettycompoundwkt": "GEOGCS[\"WGS 84\",\n    DATUM[\"WGS_1984\",\n        SPHEROID[\"WGS 84\",6378137,298.257223563,\n            AUTHORITY[\"EPSG\",\"7030\"]],\n        AUTHORITY[\"EPSG\",\"6326\"]],\n    PRIMEM[\"Greenwich\",0,\n        AUTHORITY[\"EPSG\",\"8901\"]],\n    UNIT[\"degree\",0.0174532925199433,\n        AUTHORITY[\"EPSG\",\"9122\"]],\n    AXIS[\"Latitude\",NORTH],\n    AXIS[\"Longitude\",EAST],\n    AUTHORITY[\"EPSG\",\"4326\"]]",
+                "prettywkt": "GEOGCS[\"WGS 84\",\n    DATUM[\"WGS_1984\",\n        SPHEROID[\"WGS 84\",6378137,298.257223563,\n            AUTHORITY[\"EPSG\",\"7030\"]],\n        AUTHORITY[\"EPSG\",\"6326\"]],\n    PRIMEM[\"Greenwich\",0,\n        AUTHORITY[\"EPSG\",\"8901\"]],\n    UNIT[\"degree\",0.0174532925199433,\n        AUTHORITY[\"EPSG\",\"9122\"]],\n    AXIS[\"Latitude\",NORTH],\n    AXIS[\"Longitude\",EAST],\n    AUTHORITY[\"EPSG\",\"4326\"]]",
+                "proj4": "+proj=longlat +datum=WGS84 +no_defs",
+                "units": {
+                    "horizontal": "unknown",
+                    "vertical": ""
+                },
+                "vertical": "",
+                "wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]"
+            }
+        }
+    }
+}
