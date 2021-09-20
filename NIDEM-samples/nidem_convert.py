@@ -136,3 +136,34 @@ def stats(data_uri: str, config_pathname: Path, out_pathname: Path) -> Dict[str,
         json.dump(metadata, src, indent=4)
 
     return metadata
+
+
+def hexbin(data_uri: str, config_pathname: Path, out_pathname: Path) -> Dict[str, Any]:
+    """
+    Get something akin to a convexhull.
+    See:
+        https://pdal.io/stages/filters.hexbin.html#filters-hexbin
+    """
+    hex_pipeline = [
+        {
+            "filename": data_uri,
+            "type": "readers.tiledb",
+            "override_srs": "EPSG:4326",
+            "config_file": str(config_pathname),
+        },
+        {
+            "type": "filters.hexbin",
+            "edge_size": 0.020000000015999997,  # 1 minute 12 seconds in length
+        },
+    ]
+
+    pipeline = pdal.Pipeline(json.dumps(hex_pipeline))
+    _LOG.info("calculating hexbin", uri=data_uri)
+    _ = pipeline.execute()
+    metadata = json.loads(pipeline.metadata)
+
+    _LOG.info("writing results from hexbin filter", pathname=out_pathname)
+    with open(out_pathname, "w") as src:
+        json.dump(metadata, src, indent=4)
+
+    return metadata
