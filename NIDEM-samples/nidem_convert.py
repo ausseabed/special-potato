@@ -41,6 +41,7 @@ def _write_json(data: Dict[str, Any], out_pathname: Path, **kwargs):
 
 
 def conversion(
+    data_uri: str,
     base_pipeline_pathname: Path,
     zip_pathname: Path,
     config_pathname: Path,
@@ -60,6 +61,7 @@ def conversion(
         ingestion_pipeline = json.load(src)
 
     ingestion_pipeline[1]["config_file"] = str(config_pathname)
+    ingestion_pipeline[1]["filename"] = data_uri
 
     with zipfile.ZipFile(zip_pathname, "r") as src:
         zip_objects = [f for f in src.filelist if Path(f.filename).suffix == ".txt"]
@@ -308,7 +310,13 @@ def main(uri_name, base_pipeline_pathname, zip_pathname, tiledb_config_pathname,
 
     _LOG.info("converting ASCII data files")
     with tempfile.TemporaryDirectory(suffix=".tmp", prefix="unpack-") as tempdir:
-        conversion(base_pipeline_pathname, zip_pathname, tiledb_config_pathname, tempdir)
+        conversion(
+            uri_name,
+            base_pipeline_pathname,
+            zip_pathname,
+            tiledb_config_pathname,
+            tempdir,
+        )
 
     data_uri = uritools.urisplit(uri_name)
     basepath = Path(*(Path(data_uri.path).parts[1:]))  # account for the leading "/"
