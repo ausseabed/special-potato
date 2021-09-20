@@ -103,10 +103,35 @@ def info(data_uri: str, config_pathname: Path, out_pathname: Path) -> Dict[str, 
     ]
 
     pipeline = pdal.Pipeline(json.dumps(info_pipeline))
-    _LOG.info("accessing metadata", pathname=data_uri)
+    _LOG.info("accessing metadata", uri=data_uri)
     _ = pipeline.execute()
     metadata = json.loads(pipeline.metadata)
 
+    _LOG.info("writing results from info pipeline", pathname=out_pathname)
+    with open(out_pathname, "w") as src:
+        json.dump(metadata, src, indent=4)
+
+    return metadata
+
+
+def stats(data_uri: str, config_pathname: Path, out_pathname: Path) -> Dict[str, Any]:
+    """Executes the PDAL info pipeline on the TileDB data file."""
+    info_pipeline = [
+        {
+            "filename": data_uri,
+            "type": "readers.tiledb",
+            "override_srs": "EPSG:4326",
+            "config_file": str(config_pathname),
+        },
+        {"type": "filters.stats"},
+    ]
+
+    pipeline = pdal.Pipeline(json.dumps(info_pipeline))
+    _LOG.info("calculating statistics", uri=data_uri)
+    _ = pipeline.execute()
+    metadata = json.loads(pipeline.metadata)
+
+    _LOG.info("writing results from stats pipeline", pathname=out_pathname)
     with open(out_pathname, "w") as src:
         json.dump(metadata, src, indent=4)
 
