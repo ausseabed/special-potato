@@ -19,7 +19,8 @@ The output of the metadata was generated using the STAC specification. The forma
 * [Other](sample-output) metadata outputs generated as part of the processing
 
 ### Jupyter Notebook
-* [nidem-metadata-display.ipynb](nidem-metadata-display.ipynb)
+* [Interactive vi NBViewer](https://nbviewer.jupyter.org/github/ausseabed/special-potato/blob/main/NIDEM-samples/nidem-metadata-display.ipynb)
+* [Static on GitHub](nidem-metadata-display.ipynb)
 
 ## Usage (requires the correct Python environment not detailed here)
 
