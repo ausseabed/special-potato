@@ -37,4 +37,7 @@ Options:
 ## Outputs
 
 In this example the data files were ingested into a single TileDB sparse array within an AWS bucket. The bucket isn't currently publicly available. At the moment this is purely for demonstrative purposes and not reflective of the actual direction in having publicly accessible data.
-The output of the metadata generated using the STAC specification can be found [here](https://github.com/ausseabed/special-potato/blob/main/NIDEM-samples/sample-output/NIDEM_25m.stac.json). The format is JSON, specifically GeoJSON, and can be downloaded and viewed like any other geospatial vector file.
+The output of the metadata was generated using the STAC specification. The format is JSON, specifically GeoJSON, and can be downloaded and viewed like any other geospatial vector file.
+
+### Metadata
+See [NIDEM_25m.stats.json](sample-output/NIDEM_25m.stats.json)
