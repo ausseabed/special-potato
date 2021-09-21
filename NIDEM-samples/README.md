@@ -18,6 +18,9 @@ The output of the metadata was generated using the STAC specification. The forma
 * STAC output [NIDEM_25m.stac.json](sample-output/NIDEM_25m.stac.json)
 * [Other](sample-output) metadata outputs generated as part of the processing
 
+### Jupyter Notebook
+* [nidem-metadata-display.ipynb](nidem-metadata-display.ipynb)
+
 ## Usage (requires the correct Python environment not detailed here)
 
 ```bash
