@@ -34,10 +34,14 @@ Options:
   --help                         Show this message and exit.
 ```
 
+## Code
+See [nidem_convert.py](nidem_convert.py)
+
 ## Outputs
 
 In this example the data files were ingested into a single TileDB sparse array within an AWS bucket. The bucket isn't currently publicly available. At the moment this is purely for demonstrative purposes and not reflective of the actual direction in having publicly accessible data.
 The output of the metadata was generated using the STAC specification. The format is JSON, specifically GeoJSON, and can be downloaded and viewed like any other geospatial vector file.
 
 ### Metadata
-See [NIDEM_25m.stats.json](sample-output/NIDEM_25m.stats.json)
+* STAC output [NIDEM_25m.stac.json](sample-output/NIDEM_25m.stac.json)
+* [Other](sample-output) metadata outputs generated as part of the processing
