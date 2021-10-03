@@ -17,7 +17,7 @@ The output of the metadata was generated using the STAC specification. The forma
 * [Other](sample-output) metadata outputs generated as part of the processing
 
 ### Jupyter Notebook
-* [Interactive via NBViewer](https://nbviewer.jupyter.org/github/ausseabed/special-potato/blob/main/HMAS-Canberra-sample/hmas-canberra-metadata-display.ipynb)
+* [Interactive via NBViewer](https://nbviewer.jupyter.org/github/sixy6e/special-potato/blob/main/HMAS-Canberra-sample/hmas-canberra-metadata-display.ipynb)
 * [Static on GitHub](hmas-canberra-metadata-display.ipynb)
 
 ## Usage (requires the correct Python environment not detailed here)
