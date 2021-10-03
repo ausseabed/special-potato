@@ -12,6 +12,7 @@ import tempfile
 from typing import Any, Dict
 import uuid
 import click
+import numpy
 import pandas
 import pdal
 import pystac
@@ -25,6 +26,7 @@ from pystac.extensions.pointcloud import (
 )
 from shapely.geometry import box, mapping
 from shapely import wkt
+import tiledb
 import uritools
 import structlog
 
@@ -33,11 +35,27 @@ _LOG = structlog.get_logger()
 FIELD_NAMES = "X,Y,Z,TVU"
 
 
+class Encoder(json.JSONEncoder):
+    """Extensible encoder to handle non-json types."""
+
+    def default(self, obj):
+        if isinstance(obj, datetime):
+            return obj.isoformat()
+        if isinstance(obj, numpy.ndarray):
+            return obj.tolist()
+        if isinstance(obj, numpy.integer):
+            return int(obj)
+        if isinstance(obj, numpy.floating):
+            return float(obj)
+
+        return super(Encoder, self).default(obj)
+
+
 def _write_json(data: Dict[str, Any], out_pathname: Path, **kwargs):
     """Small util for writing JSON content."""
     _LOG.info("writing JSON file", pathname=str(out_pathname), **kwargs)
     with open(out_pathname, "w") as src:
-        json.dump(data, src, indent=4)
+        json.dump(data, src, indent=4, cls=Encoder)
 
 
 def conversion(
@@ -270,7 +288,19 @@ def stac_metadata(
     # ignore validation for this prototype
     # item.validate()
 
+    stac_metadata = item.to_dict()
     _write_json(item.to_dict(), out_pathname, task="generate STAC metadata")
+
+    # attach stac metadata to the tiledb array
+    attach_metadata(data_uri.geturi(), "stac", stac_metadata)
+
+
+def attach_metadata(array_uri: str, label: str, metadata: Dict[str, Any]) -> None:
+    """
+    Attach the STAC and some other basic metadata to the TileDB array.
+    """
+    with tiledb.open(array_uri, "w") as ds:
+        ds.meta[label] = json.dumps(metadata, indent=4, cls=Encoder)
 
 
 @click.command()
