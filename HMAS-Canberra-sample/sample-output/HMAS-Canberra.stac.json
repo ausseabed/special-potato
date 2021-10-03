@@ -1,0 +1,644 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "df55565f-ccdc-474e-aaed-479d86d1f876",
+    "properties": {
+        "sonar:processed_datetime": "2020-11-03T05:19:18.065817+00:00",
+        "sonar:reference_time": "1970-01-01T00:00:00+00:00",
+        "sonar:platform_type": "surface_ship",
+        "sonar:full_raw_data": false,
+        "sonar:roll_compensated": true,
+        "sonar:pitch_compensated": true,
+        "sonar:heave_compensated": true,
+        "sonar:tide_compensated": true,
+        "sonar:number_of_receivers": 1,
+        "sonar:number_of_transmitters": 1,
+        "sonar:depth_calculation": "corrected",
+        "sonar:ray_tracing": true,
+        "sonar:msb_applied_to_attitude": false,
+        "sonar:heave_removed_from_gps_tc": false,
+        "sonar:utc_offset": "unknown",
+        "sonar:roll_reference": "unknown",
+        "sonar:draft_to_apply": 0.0,
+        "sonar:pitch_to_apply": 0.0,
+        "sonar:roll_to_apply": 0.0,
+        "sonar:gyro_to_apply": 0.0,
+        "sonar:position_offset_to_apply": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "sonar:antenna_offset_to_apply": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "sonar:transducer_offset_to_apply": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "sonar:transducer_pitch_offset_to_apply": 0.0,
+        "sonar:transducer_roll_offset_to_apply": 0.0,
+        "sonar:transducer_heading_offset_to_apply": 0.0,
+        "sonar:mru_pitch_to_apply": 0.0,
+        "sonar:mru_roll_to_apply": 0.0,
+        "sonar:mru_heading_to_apply": 0.0,
+        "sonar:mru_offset_to_apply": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "sonar:center_of_rotation_offset_to_apply": [
+            "unknown",
+            "unknown",
+            "unknown"
+        ],
+        "sonar:position_latency_to_apply": 0.0,
+        "sonar:attitude_latency_to_apply": 0.0,
+        "sonar:depth_sensor_latency_to_apply": 0.0,
+        "sonar:depth_sensor_offset_to_apply": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "sonar:rx_transducer_offset_to_apply": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "sonar:rx_transducer_pitch_offset_to_apply": 0.0,
+        "sonar:rx_transducer_roll_offset_to_apply": 0.0,
+        "sonar:rx_transducer_heading_offset_to_apply": 0.0,
+        "sonar:applied_draft": 0.0,
+        "sonar:applied_pitch_bias": -0.26,
+        "sonar:applied_roll_bias": -0.11,
+        "sonar:applied_gyro_bias": -0.2,
+        "sonar:applied_position_offset": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "sonar:applied_antenna_offset": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "sonar:applied_transducer_offset": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "sonar:applied_transducer_pitch_offset": "unknown",
+        "sonar:applied_transducer_roll_offset": "unknown",
+        "sonar:applied_transducer_heading_offset": "unknown",
+        "sonar:applied_mru_roll": 0.0,
+        "sonar:applied_mru_pitch": 0.0,
+        "sonar:applied_mru_heading": 0.0,
+        "sonar:applied_mru_offset": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "sonar:applied_center_of_rotation_offset": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "sonar:applied_position_latency": 0.0,
+        "sonar:applied_attitude_latency": 0.0,
+        "sonar:applied_depth_sensor_latency": 0.0,
+        "sonar:applied_depth_sensor_offset": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "sonar:applied_rx_transducer_offset": [
+            "unknown",
+            "unknown",
+            "unknown"
+        ],
+        "sonar:applied_rx_transducer_pitch_offset": "unknown",
+        "sonar:applied_rx_transducer_roll_offset": "unknown",
+        "sonar:applied_rx_transducer_heading_offset": "unknown",
+        "sonar:geoid": "wgs-84",
+        "sonar:tidal_datum": "unknown",
+        "sonar:time_first_ping": "2020-11-03T04:16:46.008423+00:00",
+        "sonar:time_last_ping": "2020-11-03T04:17:21.030047+00:00",
+        "sonar:min_latitude": -38.3006187,
+        "sonar:min_longitude": 144.5433319,
+        "sonar:max_latitude": -38.2997236,
+        "sonar:max_longitude": 144.5435544,
+        "sonar:min_depth": 11.11,
+        "sonar:max_depth": 30.71,
+        "sonar:svp_available": true,
+        "title": "HMAS_Canberra",
+        "description": "Survey conducted by Deakin University and data converted to a point cloud",
+        "start_datetime": "2020-11-03T04:16:46.008423Z",
+        "end_datetime": "2020-11-03T05:20:25.739042Z",
+        "created": "2021-10-03T03:06:17.191591Z",
+        "instruments": [
+            "em2040"
+        ],
+        "providers": [
+            {
+                "name": "Deakin University",
+                "roles": [
+                    "producer"
+                ]
+            },
+            {
+                "name": "Geoscience Australia",
+                "roles": [
+                    "host"
+                ]
+            }
+        ],
+        "proj:epsg": 4326,
+        "pc:count": 29636000,
+        "pc:type": "sonar",
+        "pc:encoding": "TileDB",
+        "pc:schemas": [
+            {
+                "name": "X",
+                "size": 8,
+                "type": "floating"
+            },
+            {
+                "name": "Y",
+                "size": 8,
+                "type": "floating"
+            },
+            {
+                "name": "separation",
+                "size": 8,
+                "type": "signed"
+            },
+            {
+                "name": "height",
+                "size": 8,
+                "type": "signed"
+            },
+            {
+                "name": "speed",
+                "size": 8,
+                "type": "floating"
+            },
+            {
+                "name": "heave",
+                "size": 8,
+                "type": "signed"
+            },
+            {
+                "name": "Roll",
+                "size": 8,
+                "type": "floating"
+            },
+            {
+                "name": "Pitch",
+                "size": 8,
+                "type": "floating"
+            },
+            {
+                "name": "heading",
+                "size": 8,
+                "type": "floating"
+            },
+            {
+                "name": "depth",
+                "size": 4,
+                "type": "floating"
+            },
+            {
+                "name": "course",
+                "size": 8,
+                "type": "floating"
+            },
+            {
+                "name": "beam_angle_forward",
+                "size": 4,
+                "type": "floating"
+            },
+            {
+                "name": "beam_flags",
+                "size": 4,
+                "type": "floating"
+            },
+            {
+                "name": "along_track",
+                "size": 8,
+                "type": "floating"
+            },
+            {
+                "name": "beam_angle",
+                "size": 4,
+                "type": "floating"
+            },
+            {
+                "name": "across_track",
+                "size": 4,
+                "type": "floating"
+            },
+            {
+                "name": "ping_flags",
+                "size": 8,
+                "type": "signed"
+            },
+            {
+                "name": "mean_cal_amplitude",
+                "size": 4,
+                "type": "floating"
+            },
+            {
+                "name": "gps_tide_corrector",
+                "size": 8,
+                "type": "signed"
+            },
+            {
+                "name": "tide_corrector",
+                "size": 8,
+                "type": "signed"
+            },
+            {
+                "name": "depth_corrector",
+                "size": 8,
+                "type": "signed"
+            },
+            {
+                "name": "travel_time",
+                "size": 8,
+                "type": "floating"
+            },
+            {
+                "name": "horizontal_error",
+                "size": 8,
+                "type": "floating"
+            },
+            {
+                "name": "vertical_error",
+                "size": 8,
+                "type": "floating"
+            },
+            {
+                "name": "sector_number",
+                "size": 4,
+                "type": "floating"
+            }
+        ],
+        "pc:statistics": [
+            {
+                "average": 144.5435593,
+                "count": 29636000,
+                "maximum": 144.5453186,
+                "minimum": 144.541748,
+                "name": "X",
+                "position": 0,
+                "stddev": 0.000591279516,
+                "variance": 3.496114661e-07
+            },
+            {
+                "average": -38.29969675,
+                "count": 29636000,
+                "maximum": -38.29808044,
+                "minimum": -38.30136871,
+                "name": "Y",
+                "position": 1,
+                "stddev": 0.0006510255649,
+                "variance": 4.238342862e-07
+            },
+            {
+                "average": 0.2319774598,
+                "count": 29636000,
+                "maximum": 2.11,
+                "minimum": -1.4,
+                "name": "Pitch",
+                "position": 2,
+                "stddev": 0.3886855895,
+                "variance": 0.1510764875
+            },
+            {
+                "average": -3.063931705,
+                "count": 29636000,
+                "maximum": 0.97,
+                "minimum": -7.44,
+                "name": "Roll",
+                "position": 3,
+                "stddev": 0.9828982386,
+                "variance": 0.9660889474
+            },
+            {
+                "average": 0,
+                "count": 29636000,
+                "maximum": 0,
+                "minimum": 0,
+                "name": "separation",
+                "position": 4,
+                "stddev": 0,
+                "variance": 0
+            },
+            {
+                "average": 0,
+                "count": 29636000,
+                "maximum": 0,
+                "minimum": 0,
+                "name": "height",
+                "position": 5,
+                "stddev": 0,
+                "variance": 0
+            },
+            {
+                "average": 4.082189094,
+                "count": 29636000,
+                "maximum": 5.92,
+                "minimum": 1.76,
+                "name": "speed",
+                "position": 6,
+                "stddev": 0.453458859,
+                "variance": 0.2056249368
+            },
+            {
+                "average": 9.89665272,
+                "count": 29636000,
+                "maximum": 50,
+                "minimum": -26,
+                "name": "heave",
+                "position": 7,
+                "stddev": 9.834040549,
+                "variance": 96.70835351
+            },
+            {
+                "average": 162.464834,
+                "count": 29636000,
+                "maximum": 359.77,
+                "minimum": 0.04,
+                "name": "heading",
+                "position": 8,
+                "stddev": 108.1091607,
+                "variance": 11687.59064
+            },
+            {
+                "average": 27.15439605,
+                "count": 29636000,
+                "maximum": 55.8390007,
+                "minimum": 9.583000183,
+                "name": "depth",
+                "position": 9,
+                "stddev": 3.415902969,
+                "variance": 11.66839309
+            },
+            {
+                "average": 160.5112038,
+                "count": 29636000,
+                "maximum": 352.48,
+                "minimum": 0.98,
+                "name": "course",
+                "position": 10,
+                "stddev": 101.9153233,
+                "variance": 10386.73311
+            },
+            {
+                "average": 90.21344893,
+                "count": 29636000,
+                "maximum": 92.05000305,
+                "minimum": 88.66999817,
+                "name": "beam_angle_forward",
+                "position": 11,
+                "stddev": 0.3678283136,
+                "variance": 0.1352976683
+            },
+            {
+                "average": 4.186396275,
+                "count": 29636000,
+                "maximum": 9,
+                "minimum": 0,
+                "name": "beam_flags",
+                "position": 12,
+                "stddev": 4.165411426,
+                "variance": 17.35065234
+            },
+            {
+                "average": -0.1345059818,
+                "count": 29636000,
+                "maximum": 0.4138000011,
+                "minimum": -0.8476999998,
+                "name": "along_track",
+                "position": 13,
+                "stddev": 0.1350615072,
+                "variance": 0.01824161073
+            },
+            {
+                "average": 3.064315211,
+                "count": 29636000,
+                "maximum": 43.04000092,
+                "minimum": -36.41749954,
+                "name": "beam_angle",
+                "position": 14,
+                "stddev": 21.11031922,
+                "variance": 445.6455777
+            },
+            {
+                "average": 0.09976058628,
+                "count": 29636000,
+                "maximum": 40.62874985,
+                "minimum": -30.79700089,
+                "name": "across_track",
+                "position": 15,
+                "stddev": 11.46375854,
+                "variance": 131.4177599
+            },
+            {
+                "average": 0.4972061007,
+                "count": 29636000,
+                "maximum": 113,
+                "minimum": 0,
+                "name": "ping_flags",
+                "position": 16,
+                "stddev": 7.479109396,
+                "variance": 55.93707736
+            },
+            {
+                "average": -11.71599104,
+                "count": 29636000,
+                "maximum": 12.5,
+                "minimum": -56,
+                "name": "mean_cal_amplitude",
+                "position": 17,
+                "stddev": 8.294872569,
+                "variance": 68.80491094
+            },
+            {
+                "average": 0,
+                "count": 29636000,
+                "maximum": 0,
+                "minimum": 0,
+                "name": "gps_tide_corrector",
+                "position": 18,
+                "stddev": 0,
+                "variance": 0
+            },
+            {
+                "average": -188.2577811,
+                "count": 29636000,
+                "maximum": -150,
+                "minimum": -211,
+                "name": "tide_corrector",
+                "position": 19,
+                "stddev": 10.94791774,
+                "variance": 119.8569029
+            },
+            {
+                "average": 9999,
+                "count": 29636000,
+                "maximum": 9999,
+                "minimum": 9999,
+                "name": "depth_corrector",
+                "position": 20,
+                "stddev": 0,
+                "variance": 0
+            },
+            {
+                "average": 0.04044300293,
+                "count": 29636000,
+                "maximum": 0.09089,
+                "minimum": 0.0156,
+                "name": "travel_time",
+                "position": 21,
+                "stddev": 0.005610310536,
+                "variance": 3.14755843e-05
+            },
+            {
+                "average": 0.283557767,
+                "count": 29636000,
+                "maximum": 0.3862999976,
+                "minimum": 0.25125,
+                "name": "horizontal_error",
+                "position": 22,
+                "stddev": 0.007874349322,
+                "variance": 6.200537725e-05
+            },
+            {
+                "average": 0.1092398836,
+                "count": 29636000,
+                "maximum": 0.172999993,
+                "minimum": 0.1,
+                "name": "vertical_error",
+                "position": 23,
+                "stddev": 0.0085486943,
+                "variance": 7.308017423e-05
+            },
+            {
+                "average": 0,
+                "count": 29636000,
+                "maximum": 0,
+                "minimum": 0,
+                "name": "sector_number",
+                "position": 24,
+                "stddev": 0,
+                "variance": 0
+            }
+        ],
+        "datetime": "2020-11-03T05:20:25.739042Z"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    144.54354,
+                    -38.301683
+                ],
+                [
+                    144.54361,
+                    -38.301322
+                ],
+                [
+                    144.54396,
+                    -38.301201
+                ],
+                [
+                    144.54403,
+                    -38.30084
+                ],
+                [
+                    144.54479,
+                    -38.300238
+                ],
+                [
+                    144.54549,
+                    -38.299034
+                ],
+                [
+                    144.54542,
+                    -38.298673
+                ],
+                [
+                    144.54417,
+                    -38.297951
+                ],
+                [
+                    144.54361,
+                    -38.297951
+                ],
+                [
+                    144.54354,
+                    -38.298312
+                ],
+                [
+                    144.54319,
+                    -38.298433
+                ],
+                [
+                    144.54271,
+                    -38.299275
+                ],
+                [
+                    144.54215,
+                    -38.299516
+                ],
+                [
+                    144.54208,
+                    -38.299877
+                ],
+                [
+                    144.54166,
+                    -38.300118
+                ],
+                [
+                    144.54173,
+                    -38.30072
+                ],
+                [
+                    144.54354,
+                    -38.301683
+                ]
+            ]
+        ]
+    },
+    "links": [
+        {
+            "rel": "self",
+            "href": "s3://ausseabed-pl019-baseline-data/tiledb-samples/HMAS-Canberra.stac.json",
+            "type": "application/json"
+        }
+    ],
+    "assets": {
+        "data": {
+            "href": "s3://ausseabed-pl019-baseline-data/tiledb-samples/HMAS-Canberra.tiledb",
+            "roles": [
+                "data"
+            ]
+        }
+    },
+    "bbox": [
+        144.541748,
+        -38.30136871,
+        0,
+        144.5453186,
+        -38.29808044,
+        0
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/pointcloud/v1.0.0/schema.json"
+    ]
+}

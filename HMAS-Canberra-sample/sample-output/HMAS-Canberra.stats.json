@@ -1,0 +1,277 @@
+{
+    "metadata": {
+        "filters.stats": {
+            "statistic": [
+                {
+                    "average": 144.5435593,
+                    "count": 29636000,
+                    "maximum": 144.5453186,
+                    "minimum": 144.541748,
+                    "name": "X",
+                    "position": 0,
+                    "stddev": 0.000591279516,
+                    "variance": 3.496114661e-07
+                },
+                {
+                    "average": -38.29969675,
+                    "count": 29636000,
+                    "maximum": -38.29808044,
+                    "minimum": -38.30136871,
+                    "name": "Y",
+                    "position": 1,
+                    "stddev": 0.0006510255649,
+                    "variance": 4.238342862e-07
+                },
+                {
+                    "average": 0.2319774598,
+                    "count": 29636000,
+                    "maximum": 2.11,
+                    "minimum": -1.4,
+                    "name": "Pitch",
+                    "position": 2,
+                    "stddev": 0.3886855895,
+                    "variance": 0.1510764875
+                },
+                {
+                    "average": -3.063931705,
+                    "count": 29636000,
+                    "maximum": 0.97,
+                    "minimum": -7.44,
+                    "name": "Roll",
+                    "position": 3,
+                    "stddev": 0.9828982386,
+                    "variance": 0.9660889474
+                },
+                {
+                    "average": 0,
+                    "count": 29636000,
+                    "maximum": 0,
+                    "minimum": 0,
+                    "name": "separation",
+                    "position": 4,
+                    "stddev": 0,
+                    "variance": 0
+                },
+                {
+                    "average": 0,
+                    "count": 29636000,
+                    "maximum": 0,
+                    "minimum": 0,
+                    "name": "height",
+                    "position": 5,
+                    "stddev": 0,
+                    "variance": 0
+                },
+                {
+                    "average": 4.082189094,
+                    "count": 29636000,
+                    "maximum": 5.92,
+                    "minimum": 1.76,
+                    "name": "speed",
+                    "position": 6,
+                    "stddev": 0.453458859,
+                    "variance": 0.2056249368
+                },
+                {
+                    "average": 9.89665272,
+                    "count": 29636000,
+                    "maximum": 50,
+                    "minimum": -26,
+                    "name": "heave",
+                    "position": 7,
+                    "stddev": 9.834040549,
+                    "variance": 96.70835351
+                },
+                {
+                    "average": 162.464834,
+                    "count": 29636000,
+                    "maximum": 359.77,
+                    "minimum": 0.04,
+                    "name": "heading",
+                    "position": 8,
+                    "stddev": 108.1091607,
+                    "variance": 11687.59064
+                },
+                {
+                    "average": 27.15439605,
+                    "count": 29636000,
+                    "maximum": 55.8390007,
+                    "minimum": 9.583000183,
+                    "name": "depth",
+                    "position": 9,
+                    "stddev": 3.415902969,
+                    "variance": 11.66839309
+                },
+                {
+                    "average": 160.5112038,
+                    "count": 29636000,
+                    "maximum": 352.48,
+                    "minimum": 0.98,
+                    "name": "course",
+                    "position": 10,
+                    "stddev": 101.9153233,
+                    "variance": 10386.73311
+                },
+                {
+                    "average": 90.21344893,
+                    "count": 29636000,
+                    "maximum": 92.05000305,
+                    "minimum": 88.66999817,
+                    "name": "beam_angle_forward",
+                    "position": 11,
+                    "stddev": 0.3678283136,
+                    "variance": 0.1352976683
+                },
+                {
+                    "average": 4.186396275,
+                    "count": 29636000,
+                    "maximum": 9,
+                    "minimum": 0,
+                    "name": "beam_flags",
+                    "position": 12,
+                    "stddev": 4.165411426,
+                    "variance": 17.35065234
+                },
+                {
+                    "average": -0.1345059818,
+                    "count": 29636000,
+                    "maximum": 0.4138000011,
+                    "minimum": -0.8476999998,
+                    "name": "along_track",
+                    "position": 13,
+                    "stddev": 0.1350615072,
+                    "variance": 0.01824161073
+                },
+                {
+                    "average": 3.064315211,
+                    "count": 29636000,
+                    "maximum": 43.04000092,
+                    "minimum": -36.41749954,
+                    "name": "beam_angle",
+                    "position": 14,
+                    "stddev": 21.11031922,
+                    "variance": 445.6455777
+                },
+                {
+                    "average": 0.09976058628,
+                    "count": 29636000,
+                    "maximum": 40.62874985,
+                    "minimum": -30.79700089,
+                    "name": "across_track",
+                    "position": 15,
+                    "stddev": 11.46375854,
+                    "variance": 131.4177599
+                },
+                {
+                    "average": 0.4972061007,
+                    "count": 29636000,
+                    "maximum": 113,
+                    "minimum": 0,
+                    "name": "ping_flags",
+                    "position": 16,
+                    "stddev": 7.479109396,
+                    "variance": 55.93707736
+                },
+                {
+                    "average": -11.71599104,
+                    "count": 29636000,
+                    "maximum": 12.5,
+                    "minimum": -56,
+                    "name": "mean_cal_amplitude",
+                    "position": 17,
+                    "stddev": 8.294872569,
+                    "variance": 68.80491094
+                },
+                {
+                    "average": 0,
+                    "count": 29636000,
+                    "maximum": 0,
+                    "minimum": 0,
+                    "name": "gps_tide_corrector",
+                    "position": 18,
+                    "stddev": 0,
+                    "variance": 0
+                },
+                {
+                    "average": -188.2577811,
+                    "count": 29636000,
+                    "maximum": -150,
+                    "minimum": -211,
+                    "name": "tide_corrector",
+                    "position": 19,
+                    "stddev": 10.94791774,
+                    "variance": 119.8569029
+                },
+                {
+                    "average": 9999,
+                    "count": 29636000,
+                    "maximum": 9999,
+                    "minimum": 9999,
+                    "name": "depth_corrector",
+                    "position": 20,
+                    "stddev": 0,
+                    "variance": 0
+                },
+                {
+                    "average": 0.04044300293,
+                    "count": 29636000,
+                    "maximum": 0.09089,
+                    "minimum": 0.0156,
+                    "name": "travel_time",
+                    "position": 21,
+                    "stddev": 0.005610310536,
+                    "variance": 3.14755843e-05
+                },
+                {
+                    "average": 0.283557767,
+                    "count": 29636000,
+                    "maximum": 0.3862999976,
+                    "minimum": 0.25125,
+                    "name": "horizontal_error",
+                    "position": 22,
+                    "stddev": 0.007874349322,
+                    "variance": 6.200537725e-05
+                },
+                {
+                    "average": 0.1092398836,
+                    "count": 29636000,
+                    "maximum": 0.172999993,
+                    "minimum": 0.1,
+                    "name": "vertical_error",
+                    "position": 23,
+                    "stddev": 0.0085486943,
+                    "variance": 7.308017423e-05
+                },
+                {
+                    "average": 0,
+                    "count": 29636000,
+                    "maximum": 0,
+                    "minimum": 0,
+                    "name": "sector_number",
+                    "position": 24,
+                    "stddev": 0,
+                    "variance": 0
+                }
+            ]
+        },
+        "readers.tiledb": {
+            "comp_spatialreference": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+            "spatialreference": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+            "srs": {
+                "compoundwkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+                "horizontal": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+                "isgeocentric": false,
+                "isgeographic": true,
+                "prettycompoundwkt": "GEOGCS[\"WGS 84\",\n    DATUM[\"WGS_1984\",\n        SPHEROID[\"WGS 84\",6378137,298.257223563,\n            AUTHORITY[\"EPSG\",\"7030\"]],\n        AUTHORITY[\"EPSG\",\"6326\"]],\n    PRIMEM[\"Greenwich\",0,\n        AUTHORITY[\"EPSG\",\"8901\"]],\n    UNIT[\"degree\",0.0174532925199433,\n        AUTHORITY[\"EPSG\",\"9122\"]],\n    AXIS[\"Latitude\",NORTH],\n    AXIS[\"Longitude\",EAST],\n    AUTHORITY[\"EPSG\",\"4326\"]]",
+                "prettywkt": "GEOGCS[\"WGS 84\",\n    DATUM[\"WGS_1984\",\n        SPHEROID[\"WGS 84\",6378137,298.257223563,\n            AUTHORITY[\"EPSG\",\"7030\"]],\n        AUTHORITY[\"EPSG\",\"6326\"]],\n    PRIMEM[\"Greenwich\",0,\n        AUTHORITY[\"EPSG\",\"8901\"]],\n    UNIT[\"degree\",0.0174532925199433,\n        AUTHORITY[\"EPSG\",\"9122\"]],\n    AXIS[\"Latitude\",NORTH],\n    AXIS[\"Longitude\",EAST],\n    AUTHORITY[\"EPSG\",\"4326\"]]",
+                "proj4": "+proj=longlat +datum=WGS84 +no_defs",
+                "units": {
+                    "horizontal": "unknown",
+                    "vertical": ""
+                },
+                "vertical": "",
+                "wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]"
+            }
+        }
+    }
+}

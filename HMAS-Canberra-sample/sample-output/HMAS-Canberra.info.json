@@ -1,0 +1,179 @@
+{
+    "metadata": {
+        "filters.info": {
+            "bbox": {
+                "maxx": 144.5453186,
+                "maxy": -38.29808044,
+                "maxz": 0,
+                "minx": 144.541748,
+                "miny": -38.30136871,
+                "minz": 0
+            },
+            "dimensions": "X, Y, separation, height, speed, heave, Roll, Pitch, heading, depth, course, beam_angle_forward, beam_flags, along_track, beam_angle, across_track, ping_flags, mean_cal_amplitude, gps_tide_corrector, tide_corrector, depth_corrector, travel_time, horizontal_error, vertical_error, sector_number",
+            "num_points": 29636000,
+            "schema": {
+                "dimensions": [
+                    {
+                        "name": "X",
+                        "size": 8,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "Y",
+                        "size": 8,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "separation",
+                        "size": 8,
+                        "type": "signed"
+                    },
+                    {
+                        "name": "height",
+                        "size": 8,
+                        "type": "signed"
+                    },
+                    {
+                        "name": "speed",
+                        "size": 8,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "heave",
+                        "size": 8,
+                        "type": "signed"
+                    },
+                    {
+                        "name": "Roll",
+                        "size": 8,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "Pitch",
+                        "size": 8,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "heading",
+                        "size": 8,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "depth",
+                        "size": 4,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "course",
+                        "size": 8,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "beam_angle_forward",
+                        "size": 4,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "beam_flags",
+                        "size": 4,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "along_track",
+                        "size": 8,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "beam_angle",
+                        "size": 4,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "across_track",
+                        "size": 4,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "ping_flags",
+                        "size": 8,
+                        "type": "signed"
+                    },
+                    {
+                        "name": "mean_cal_amplitude",
+                        "size": 4,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "gps_tide_corrector",
+                        "size": 8,
+                        "type": "signed"
+                    },
+                    {
+                        "name": "tide_corrector",
+                        "size": 8,
+                        "type": "signed"
+                    },
+                    {
+                        "name": "depth_corrector",
+                        "size": 8,
+                        "type": "signed"
+                    },
+                    {
+                        "name": "travel_time",
+                        "size": 8,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "horizontal_error",
+                        "size": 8,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "vertical_error",
+                        "size": 8,
+                        "type": "floating"
+                    },
+                    {
+                        "name": "sector_number",
+                        "size": 4,
+                        "type": "floating"
+                    }
+                ]
+            },
+            "srs": {
+                "compoundwkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+                "horizontal": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+                "isgeocentric": false,
+                "isgeographic": true,
+                "prettycompoundwkt": "GEOGCS[\"WGS 84\",\n    DATUM[\"WGS_1984\",\n        SPHEROID[\"WGS 84\",6378137,298.257223563,\n            AUTHORITY[\"EPSG\",\"7030\"]],\n        AUTHORITY[\"EPSG\",\"6326\"]],\n    PRIMEM[\"Greenwich\",0,\n        AUTHORITY[\"EPSG\",\"8901\"]],\n    UNIT[\"degree\",0.0174532925199433,\n        AUTHORITY[\"EPSG\",\"9122\"]],\n    AXIS[\"Latitude\",NORTH],\n    AXIS[\"Longitude\",EAST],\n    AUTHORITY[\"EPSG\",\"4326\"]]",
+                "prettywkt": "GEOGCS[\"WGS 84\",\n    DATUM[\"WGS_1984\",\n        SPHEROID[\"WGS 84\",6378137,298.257223563,\n            AUTHORITY[\"EPSG\",\"7030\"]],\n        AUTHORITY[\"EPSG\",\"6326\"]],\n    PRIMEM[\"Greenwich\",0,\n        AUTHORITY[\"EPSG\",\"8901\"]],\n    UNIT[\"degree\",0.0174532925199433,\n        AUTHORITY[\"EPSG\",\"9122\"]],\n    AXIS[\"Latitude\",NORTH],\n    AXIS[\"Longitude\",EAST],\n    AUTHORITY[\"EPSG\",\"4326\"]]",
+                "proj4": "+proj=longlat +datum=WGS84 +no_defs",
+                "units": {
+                    "horizontal": "unknown",
+                    "vertical": ""
+                },
+                "vertical": "",
+                "wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]"
+            }
+        },
+        "readers.tiledb": {
+            "comp_spatialreference": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+            "spatialreference": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+            "srs": {
+                "compoundwkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+                "horizontal": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+                "isgeocentric": false,
+                "isgeographic": true,
+                "prettycompoundwkt": "GEOGCS[\"WGS 84\",\n    DATUM[\"WGS_1984\",\n        SPHEROID[\"WGS 84\",6378137,298.257223563,\n            AUTHORITY[\"EPSG\",\"7030\"]],\n        AUTHORITY[\"EPSG\",\"6326\"]],\n    PRIMEM[\"Greenwich\",0,\n        AUTHORITY[\"EPSG\",\"8901\"]],\n    UNIT[\"degree\",0.0174532925199433,\n        AUTHORITY[\"EPSG\",\"9122\"]],\n    AXIS[\"Latitude\",NORTH],\n    AXIS[\"Longitude\",EAST],\n    AUTHORITY[\"EPSG\",\"4326\"]]",
+                "prettywkt": "GEOGCS[\"WGS 84\",\n    DATUM[\"WGS_1984\",\n        SPHEROID[\"WGS 84\",6378137,298.257223563,\n            AUTHORITY[\"EPSG\",\"7030\"]],\n        AUTHORITY[\"EPSG\",\"6326\"]],\n    PRIMEM[\"Greenwich\",0,\n        AUTHORITY[\"EPSG\",\"8901\"]],\n    UNIT[\"degree\",0.0174532925199433,\n        AUTHORITY[\"EPSG\",\"9122\"]],\n    AXIS[\"Latitude\",NORTH],\n    AXIS[\"Longitude\",EAST],\n    AUTHORITY[\"EPSG\",\"4326\"]]",
+                "proj4": "+proj=longlat +datum=WGS84 +no_defs",
+                "units": {
+                    "horizontal": "unknown",
+                    "vertical": ""
+                },
+                "vertical": "",
+                "wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]"
+            }
+        }
+    }
+}
