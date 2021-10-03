@@ -11,7 +11,7 @@ See [nidem_convert.py](nidem_convert.py)
 
 ## Outputs
 
-In this example the data files were ingested into a single TileDB sparse array within an AWS bucket. The bucket is publicly available at s3://ausseabed-pl019-baseline-data/tiledb-samples/. At the moment this is purely for demonstrative purposes.
+In this example the data files were ingested into a single TileDB sparse array within an AWS bucket. The TileDB arrays and STAC metadata are publicly available at [TileDB and STAC examples](https://ausseabed-pl019-baseline-data.s3.amazonaws.com/index.html#tiledb-samples/). At the moment this is purely for demonstrative purposes.
 The output of the metadata was generated using the STAC specification. The format is JSON, specifically GeoJSON, and can be downloaded and viewed like any other geospatial vector file.
 
 ### Metadata
