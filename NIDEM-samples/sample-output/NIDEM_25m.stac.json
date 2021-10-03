@@ -1,13 +1,13 @@
 {
     "type": "Feature",
     "stac_version": "1.0.0",
-    "id": "70f6344c-5567-41f7-a79b-53a68e8f8848",
+    "id": "ddddf6ae-03f5-46c1-90c2-e6a9abb507ba",
     "properties": {
         "title": "NIDEM-25m",
         "description": "Sourced from NIDEM and converted to a point cloud",
         "start_datetime": "1986-08-16T00:00:00Z",
         "end_datetime": "2017-07-31T23:59:59Z",
-        "created": "2021-09-20T06:17:20.254113Z",
+        "created": "2021-10-03T04:11:43.790295Z",
         "instruments": [
             "tm",
             "etm+",
@@ -3306,13 +3306,13 @@
     "links": [
         {
             "rel": "self",
-            "href": "s3://ardc-gmrt-test-data/NIDEM-25m/NIDEM_25m.stac.json",
+            "href": "s3://ausseabed-pl019-baseline-data/tiledb-samples/NIDEM_25m.stac.json",
             "type": "application/json"
         }
     ],
     "assets": {
         "data": {
-            "href": "s3://ardc-gmrt-test-data/NIDEM-25m/NIDEM_25m.tiledb",
+            "href": "s3://ausseabed-pl019-baseline-data/tiledb-samples/NIDEM_25m.tiledb",
             "roles": [
                 "data"
             ]
