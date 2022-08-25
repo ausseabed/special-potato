@@ -1,0 +1,6 @@
+# Overview
+
+Collection of notebooks used for the ingestion of data for the [ARDC-PL019](https://ecat.ga.gov.au/geonetwork/srv/api/records/c09a1237-f1af-4f1b-8509-4eae5636fd14) project.
+
+Not for general use, but informative purposes. The functions, methods, workflows were experimental to determine a best pattern for a future data processing pipeline.
+How things were done in this project may not be how we would do it again in future.
